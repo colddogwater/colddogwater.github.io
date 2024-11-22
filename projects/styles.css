@@ -1,0 +1,185 @@
+/* --------------- General ----------------- */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161617;
+    color: #ffffff;
+  }
+  
+  header {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .github-link {
+    display: inline-block; 
+    text-align: center;     
+    text-decoration: none; 
+    color: #000000;       
+    background-color: #ffffff; 
+    padding: 0.5rem 1rem; 
+    border-radius: 5px;   
+    font-size: 1rem;      
+    font-weight: bold;     
+    transition: background-color 0.3s ease; 
+}
+
+.horizontal-line {
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    width: 30%;
+}
+
+.horizontal-line2 {
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    width: 100%;
+}
+
+.whitespace {   
+    height: 15px;
+}
+  
+/* -------------- Timeline ----------------- */
+#timeline {
+    border-radius: 25px;
+    padding: 2rem;
+    max-width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: #2d2d2d;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 2rem 0;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ffffff;
+    z-index: 0;
+  }
+  
+/* --------------- Individual Events ----------------- */
+.event {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+  }
+  
+
+  .event .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    margin: 0.5rem 0;  
+  }
+
+  .event.completed .dot {
+    border: 4px solid #ac7807;
+    background-color: #eda60d; 
+  }
+  
+  .event.upcoming .dot {
+    border: 4px solid #eda60d;
+    background-color: #2d2d2d; 
+  }
+  
+  
+  
+/* --------------- Event Details ----------------- */
+  .event .date {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0.5rem 0;
+  }
+  
+  .event .description {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    margin: 0.5rem 0;
+    width: 80%;
+  }
+  
+/* --------------- Responsive Design ----------------- */
+  @media (max-width: 600px) {
+    .timeline {
+      flex-direction: column;
+    }
+  
+    .timeline::before {
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+    }
+  
+    .event {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+  
+    .event .dot {
+      margin: 0 1rem 0 0;
+    }
+  }
+  
+  
+/* --------------- Blog Posts Styling ----------------- */
+  #blog-posts {
+    padding: 1rem 2rem;
+    max-width: 800px;
+    margin: 1rem auto;
+  }
+  
+  .blog-post {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post h3 {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .blog-post .date {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  .blog-post h3 {
+    text-decoration: none;
+    color: #eda60d;
+  }
+  
+  .blog-post a:hover {
+    text-decoration: underline;
+  }
+
+  .blog-image {
+    display: block;
+    max-width: 100%; 
+    height: auto;    
+    margin: 1rem auto; 
+    border-radius: 10px; 
+  }
+  

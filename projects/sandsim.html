@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Sand sim</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falling Sand Simulator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Sand Simulation</h1>
-    <p>Imagine a timeline here with blog posts on what ive done so far</p>
+  <header>
+    <h1>SAND POWDER SIMULATION</h1>
+    <div class="horizontal-line"></div>
+    <div class="whitespace"></div>
+    <a class="github-link" href="https://github.com/colddogwater/sand_sim">Github</a>
+  </header>
+
+  <!-- Timeline Section -->
+  <section id="timeline">
+    <h2>Milestones</h2>
+    <div class="whitespace"></div>
+    <div class="timeline">
+      <div class="event completed">
+        <p class="date">Basic Implementation</p>
+        <div class="dot"></div>
+        <p class="description">Pixels fall down on mouse click.</p>
+      </div>
+      <div class="event upcoming">
+        <p class="date">Sand Topples</p>
+        <div class="dot"></div>
+        <p class="description">Sand particle towers that get too tall topple over.</p>
+      </div>
+      <div class="event upcoming">
+        <p class="date">Other Materials</p>
+        <div class="dot"></div>
+        <p class="description"> Add stone and water materials.</p>
+      </div>
+      <div class="event upcoming">
+        <p class="date">Wind Vectors</p>
+        <div class="dot"></div>
+        <p class="description">A wind vector array that affects sand.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Blog Section -->
+  <section id="blog-posts">
+    <h2>Blog Posts</h2>
+    <div class="horizontal-line2"></div>
+    <div class="whitespace"></div>
+    <div class="blog-post">
+      <h3>First Implementation</h3>
+      <p class="date">Posted on 21 Nov, 2024</p>
+      <p>Learning a new package called RayLib which is a package for graphics in C. Pretty insane what can be achieved with it and how easy it is to get started. Using this, I visualised 
+        a 2D array which was used as the simulation environment. An integer of 1 represents a 'sand' cell which always moves, or should I say falls, to the bottom of the array. Mouse clicks
+        update the cell at the corresponding coordinates and you can see the sand fall down on the screen. Very simple implementation but alot can be improved, i.e. sand towers topple when
+        too high, different materials types that either don't fall or act like liquids. I have seen others online that have fully implemented atmospheres with "wind" vector arrays which seems
+        like a potential long term goal.
+      </p>
+    </div>
+  </section>
 </body>
 </html>
