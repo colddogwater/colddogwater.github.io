@@ -1,6 +1,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -14,6 +15,21 @@ nav {
     padding-bottom: 5px;
 }
 
+nav a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: white;
+} 
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --------------- Head Piece Styling ----------------- */
 .headpiece {
     text-align: center;
     padding-top: 50px;
@@ -22,7 +38,40 @@ nav {
     padding: 10px;
     padding-top: 150px;
     position: fixed;
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
+
+.headpiece h1 {
+  font-size: 2.5em;
+}
+
+/* --------------- Social Media Icons ----------------- */
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons .icon {
+  margin: 0 8px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+.social-icons .icon:hover {
+  color: #007bff; 
+  transform: scale(1.2);
+}
+.social-icons .github:hover {
+  color: #333;
+}
+.social-icons .linkedin:hover {
+  color: #0077b5;
+}
+.social-icons .youtube:hover {
+  color: #ff0000; 
+}
+/* ---------------------------------------------------- */
 
 .content {
     float: right;
@@ -34,6 +83,20 @@ nav {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 25px;
     padding: 15px;
+}
+
+.blog {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+    padding: 15px;
+    padding-top: 2px;
+    margin-bottom: 10px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
 }
 
 /* Clear floats after the columns */
