@@ -1,0 +1,99 @@
+body {
+    background-color:  #f5f5f5 ;
+}
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #154384;
+    margin-bottom: 0;
+}
+h2 {
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+ul {
+    text-align: left;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.button {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically (if div has a height) */
+
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+.button a {
+
+    margin: 5px;
+    padding: 8px;
+    background: black;
+    border-radius: 15px;
+
+    text-align:center;
+}
+
+.button:hover {  
+    text-decoration: underline; 
+}
+
+.button a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.button a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.under-title {
+    text-align: center;
+    margin-top: 0;
+  }
+
+.horizontal-line {
+    height: 2px;
+    background: #333;
+    margin: auto;
+    width: 100%;
+}
+
+li {
+    margin-top: 15px;
+}
+
+.top {
+    /*border: dashed red;*/
+    margin-bottom: 0;
+    
+}
+.rich-point-right {
+    text-align: right;
+    margin-top: 0;
+
+
+    margin-bottom: 0;
+}
+
+.halves {
+    display: inline-block;
+    width: 49.5%; 
+    /*border: 1px solid #f00; */
+    box-sizing: border-box; 
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Taken from WWEB.DEV -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
+
+<div class="row">
+    <div class="headpiece"> 
+        <h1>Jack Crabb </h1>
+        <p>Physicist | Programmer | Data Visualiser</p>
+        <div class="social-icons">
+            <a href="https://github.com/colddogwater" target="_blank" class="icon github" aria-label="GitHub">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jack-crabb-639576212/" target="_blank" class="icon linkedin" aria-label="LinkedIn">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://youtube.com/channel/yourchannel" target="_blank" class="icon youtube" aria-label="YouTube">
+                <i class="fa fa-youtube"></i>
+            </a>
+            </div>
+    </div>
+
+    <div class="content">
+        <nav> 
+            <a href="index.html"> Home </a>
+            <a href="resume/index.html"> Resume </a>
+            <a href="https://www.linkedin.com/in/jack-crabb-639576212/"> Contact Me </a>
+        </nav>
+        <div class="blog-section">
+            <h2>About Me</h2>
+            <p> My name is Jack and I am a recent Physics graduate, having just graduated with First Class Honours at the end of 2024.
+                I love applying my knowledge and skillset to work on cool projects, this website aims to showcase these projects and
+                to explore topics I find interesting. I have experience in C, Python, and Fortran and enjoy writing numerical simulations, games
+                and visualising data to gain insights.
+            </p>
+            <h3>Current Interests:</h3>
+            <ul>
+                <li>Game Theory</li>
+                <li>Radio Astronomy</li>
+                <li>High Temperature Furnaces</li>
+                <li>Quantum Computing</li>
+            </ul>
+            <h2>Recent Blog Posts</h2>
+            <div class="blog-list">
+                {% for post in site.posts %}
+                <div class="blog-card">
+                    <a href="{{ post.url | relative_url }}">
+                        <img src="{{ post.image | default: '/blg-imgs/default.png'| relative_url }}" alt="{{ post.title }}" class="blog-image">
+                        <div class="blog-info">
+                            <h3>{{ post.title }}</h3>
+                            <p class="blog-description">{{ post.description }}</p>
+                            <small class="blog-date">{{ post.date | date: "%B %d, %Y" }}</small>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

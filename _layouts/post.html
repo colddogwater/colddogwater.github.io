@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/blog.css' | absolute_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <title>{{ page.title }}</title>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const closeBtn = document.querySelector(".close");
+    
+        document.querySelectorAll(".lightbox").forEach(image => {
+            image.addEventListener("click", function(event) {
+                event.preventDefault();
+                lightbox.style.display = "flex";
+                lightboxImg.src = this.href;
+            });
+        });
+    
+        closeBtn.addEventListener("click", function() {
+            lightbox.style.display = "none";
+        });
+    
+        lightbox.addEventListener("click", function(event) {
+            if (event.target === lightbox) {
+                lightbox.style.display = "none";
+            }
+        });
+    });
+</script>
+<body>
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
+
+     <nav> 
+        <a href="/"> Home </a>
+        <a href="resume/index.html"> Resume </a>
+        <a href="https://www.linkedin.com/in/jack-crabb-639576212/"> Contact Me </a>
+    </nav>
+     
+<div class="row">
+    <div class="blog-post">
+        <h1>{{ page.title }}</h1>
+        <p class="date"><small>Published on {{ page.date | date: "%B %d, %Y" }}</small></p>
+        <div class="post-content">
+            {{ content }}
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
