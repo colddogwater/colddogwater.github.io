@@ -2,7 +2,7 @@
 layout: post
 title:  "Radio Astronomy Update!"
 date:   2024-08-09 19:48:52 +0800
-description: "A Nooelec mesh atenna attached to a custom built support system. Outlines current progress with the satellite dish, beginning designs and future outlooks"
+description: "A Nooelec mesh antenna attached to a custom built support system. Outlines current progress with the satellite dish, beginning designs and future outlooks"
 image: "blg-imgs/astro-radio/desire.jpg"
 categories: radio astronomy
 ---
@@ -61,7 +61,7 @@ Here shows the first design ideas I have for the antenna stand, my laptop being 
 
 ## Current State
 
-The stand and wheel system was successfully built, however, this was left outside and the rain and time withered away the wheel system until it was ultimately abadoned. The current system just has 4 omni-directional wheels on each corner of the frame and has been adaquete at its task of moving the antenna out and in of the garage. 
+The stand and wheel system was successfully built, however, this was left outside and the rain and time withered away the wheel system until it was ultimately abandoned. The current system just has 4 omni-directional wheels on each corner of the frame and has been adequate at its task of moving the antenna out and in of the garage. 
 
 <img src="{{ '/blg-imgs/astro-radio/signal1.jpg' | relative_url }}" alt="Description" class="responsive-img">
 
