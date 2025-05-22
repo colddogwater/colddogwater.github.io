@@ -4,5 +4,19 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+This is a place to collect my projects and interests. 
+
+# About Me
+
+I am a Physics graduate.
+
+Current interests:
+- Computational Physics
+- Astronomy
+- High Temperature Furnaces
+
+# Blogs I Like
+- [Words And Buttons](https://wordsandbuttons.online/index.html)
+- [Computational Physics](https://compphys.go.ro/)
+
+
